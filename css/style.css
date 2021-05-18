@@ -1,4 +1,5 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+
 * {
     margin : 0;
     padding: 0;
@@ -7,7 +8,7 @@
 body {
     font-size       : 25px;
     font-weight     : 500;
-    font-family: 'EB Garamond', serif;
+    font-family     : 'EB Garamond', serif;
     background-color: #FEE492;
     max-width       : 100%;
     overflow-x      : hidden;
@@ -50,6 +51,13 @@ body {
     color: #FEE492;
 }
 
+.list:hover {
+    background-color: #FEE492;
+    color           : #7A578D;
+    border-radius   : 5px;
+    padding         : 5px 10px;
+}
+
 button {
     background-image   : url('search.png');
     background-size    : 31px 31px;
@@ -63,41 +71,54 @@ button {
     border             : none;
     outline-color      : #FEE492;
     cursor             : pointer;
+    border-radius      : 5px;
+}
+
+button:hover {
+    background-color: darkkhaki;
 }
 
 input[type=text] {
-    color     : #FEE492;
-    padding   : 10px;
-    font-size : 17px;
-    border    : none;
-    float     : left;
-    width     : 80%;
-    background: #7A578D;
+    color        : #FEE492;
+    padding      : 10px;
+    font-size    : 17px;
+    border       : none;
+    float        : left;
+    width        : 80%;
+    background   : #68407D;
+    border-radius: 5px;
+}
+
+input[type=text]:hover {
+    background-color: rgb(170, 47, 170);
+    color           : #FEE492;
 }
 
 .container {
-    margin-top: 150px;
+    margin-top      : 150px;
     background-color: #7A578D;
-    width: 95vw;
-    margin: 150px auto;
-    border-radius: 35% 0 0 28%;
-    
+    width           : 95vw;
+    margin          : 150px auto;
+    border-radius   : 35% 0 0 28%;
+
 }
 
 .content {
     display: flex;
 
 }
-.product_image{
-    padding-top: 80px;
+
+.product_image {
+    padding-top : 80px;
     padding-left: 30px;
 }
+
 .product_description {
     display       : flex;
     flex-direction: column;
     padding       : 56px 80px;
     align-items   : flex-start;
-    color: #FEE492;
+    color         : #FEE492;
 }
 
 li {
@@ -129,8 +150,8 @@ label {
 }
 
 .About_li {
-    list-style  : disc;
-    padding-left: 10px;
+    list-style   : disc;
+    padding-left : 10px;
     margin-bottom: 13px;
 }
 
@@ -140,7 +161,7 @@ label {
 }
 
 .select {
-    display: flex;
+    display : flex;
     position: relative;
 }
 
@@ -151,84 +172,92 @@ label {
     box-sizing      : border-box;
     padding         : 11px 60px 11px 25px;
     border          : 1px solid #7c755f;
-    cursor: pointer;
-    border-radius: 5px;
+    cursor          : pointer;
+    border-radius   : 5px;
 }
-.select_icon{
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: block;
+
+.select_icon {
+    position        : absolute;
+    top             : 0;
+    right           : 0;
+    display         : block;
     background-color: rgb(145, 93, 93);
-    height: 100%;
-    width: 36px;
-    pointer-events: none;
+    height          : 100%;
+    width           : 36px;
+    pointer-events  : none;
 }
+
 .select_icon::before,
-.select_icon::after
-{
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    left: 50%;
-    transform: translate(-50%,-50%);
+.select_icon::after {
+    content  : "";
+    position : absolute;
+    width    : 0;
+    height   : 0;
+    left     : 50%;
+    transform: translate(-50%, -50%);
 }
-.select_icon::before
-{
-    border-left: 7px solid transparent;
-    border-right :7px solid transparent ;
+
+.select_icon::before {
+    border-left  : 7px solid transparent;
+    border-right : 7px solid transparent;
     border-bottom: 7px yellow solid;
-    top: 39%;
+    top          : 39%;
 }
-.select_icon::after
-{
-    border-left: 7px solid transparent;
-    border-right :7px solid transparent ;
-    border-top: 7px yellow solid;
-    top: 60%;
+
+.select_icon::after {
+    border-left : 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top  : 7px yellow solid;
+    top         : 60%;
 }
+
 .se:focus,
-.se:hover{
-outline: none;
-border: 1px solid oldlace;
+.se:hover {
+    outline: none;
+    border : 1px solid oldlace;
 }
-.bttns{
-    display: flex;
+
+.bttns {
+    display       : flex;
     flex-direction: column;
-    width: 100%;
+    width         : 100%;
 }
-.btn1,.btn2{
-    width: 100%;
+
+.btn1,
+.btn2 {
+    width        : 100%;
     margin-bottom: 20px;
-    margin-left: 150px;
+    margin-left  : 150px;
 }
-.t2,.t1 {
-    align-self: center;
+
+.t2,
+.t1 {
+    align-self           : center;
     -webkit-border-radius: 10;
-    -moz-border-radius: 10;
-    width: 40%;
-    border-radius: 10px;
-    font-family: Georgia;
-    color: #FEE492;
-    font-size: 25px;
-    background: #7F598C;
-    padding: 10px 20px 10px 20px;
-    border: solid #FFE594 2px;
+    -moz-border-radius   : 10;
+    width                : 40%;
+    border-radius        : 10px;
+    font-family          : Georgia;
+    color                : #FEE492;
+    font-size            : 25px;
+    background           : #7F598C;
+    padding              : 10px 20px 10px 20px;
+    border               : solid #FFE594 2px;
+    text-decoration      : none;
+}
+
+.t2:hover,
+.t1:hover {
+    background     : #827380;
     text-decoration: none;
-  }
-  
-  .t2:hover,
-  .t1:hover {
-    background: #827380;
-    text-decoration: none;
-  }
-  .t2:before {
-    content: "\f07a";
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
+}
+
+.t2:before {
+    content                : "\f07a";
+    display                : inline-block;
+    font                   : normal normal normal 14px/1 FontAwesome;
+    font-size              : inherit;
+    text-rendering         : auto;
+    -webkit-font-smoothing : antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
+}
